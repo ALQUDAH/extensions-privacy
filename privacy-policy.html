@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Save Image Pro &amp; RTL Director Pro</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 48px 24px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .subtitle { color: #555; margin-bottom: 40px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 36px 0 10px; }
+  p  { margin-bottom: 14px; }
+  ul { padding-left: 24px; margin-bottom: 14px; }
+  li { margin-bottom: 6px; }
+  .ext-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    background: #fafafa;
+  }
+  .ext-box h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  a { color: #1565C0; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Save Image Pro &amp; RTL Director Pro — Chrome Extensions by Abdalrahman Alqudah<br>
+  Last updated: June 2025</p>
+
+  <h2>Overview</h2>
+  <p>Both <strong>Save Image Pro</strong> and <strong>RTL Director Pro</strong> are designed with privacy as a core principle. Neither extension collects, transmits, stores externally, or shares any personal data or usage information. All processing happens entirely within your browser on your device.</p>
+
+  <h2>Extensions Covered</h2>
+
+  <div class="ext-box">
+    <h3>💾 Save Image Pro</h3>
+    <p><strong>What it does:</strong> Allows you to save images from webpages in various formats (JPEG, PNG, WebP, AVIF, BMP, GIF, PDF), resize them, copy to clipboard, and batch-download.</p>
+    <p><strong>Data collected:</strong> None.</p>
+    <ul>
+      <li>Image conversion happens locally in your browser using the Canvas API.</li>
+      <li>Downloaded images are saved directly to your device via the Chrome Downloads API.</li>
+      <li>Your settings (default format, quality, filename template) are stored locally using <code>chrome.storage.sync</code>, which may sync across your Chrome devices via Google's infrastructure — but no data is sent to any third-party server.</li>
+      <li>Download history (last 50 entries) is stored locally in <code>chrome.storage.local</code>.</li>
+    </ul>
+    <p><strong>Permissions used and why:</strong></p>
+    <ul>
+      <li><strong>contextMenus</strong> — to add "Save Image as…" to the right-click menu.</li>
+      <li><strong>downloads</strong> — to save converted image files to your device.</li>
+      <li><strong>storage</strong> — to save your settings and history locally.</li>
+      <li><strong>scripting</strong> — to copy images to clipboard in the page context.</li>
+      <li><strong>clipboardWrite</strong> — to write PNG data to your clipboard.</li>
+      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — to fetch image data from any website for conversion (images respect the same origin; this permission allows the extension's service worker to read image bytes regardless of CORS headers, which is necessary for format conversion).</li>
+    </ul>
+  </div>
+
+  <div class="ext-box">
+    <h3>↔ RTL Director Pro</h3>
+    <p><strong>What it does:</strong> Automatically detects and fixes right-to-left text direction for Arabic, Hebrew, Persian, Urdu, and other RTL languages on any website.</p>
+    <p><strong>Data collected:</strong> None.</p>
+    <ul>
+      <li>Text direction detection is performed entirely locally using Unicode character analysis.</li>
+      <li>No page content, text, URLs, or user activity is ever recorded or transmitted.</li>
+      <li>Your settings (threshold, per-site preferences) are stored using <code>chrome.storage.sync</code>, which may sync across your Chrome devices via Google's infrastructure — but no data is sent to any third-party server.</li>
+    </ul>
+    <p><strong>Permissions used and why:</strong></p>
+    <ul>
+      <li><strong>storage</strong> — to save your threshold settings and per-site on/off preferences.</li>
+      <li><strong>scripting</strong> — to inject the RTL detection/fixing script into webpages.</li>
+      <li><strong>activeTab</strong> — to access and fix the current tab's content when you click the extension icon.</li>
+      <li><strong>contextMenus</strong> — to add "Fix RTL/LTR direction" to the right-click menu for selected text.</li>
+      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — to run the content script on all websites (necessary for the extension to fix RTL text on any site you visit).</li>
+    </ul>
+  </div>
+
+  <h2>Third-Party Services</h2>
+  <p>Neither extension uses any third-party analytics, advertising, tracking, or data collection services. There are no servers associated with these extensions other than Google's own Chrome sync infrastructure (used only for your local settings).</p>
+
+  <h2>Children's Privacy</h2>
+  <p>These extensions do not collect any data from anyone, including children under 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this privacy policy changes in the future, the updated policy will be published at this URL. Any change that involves data collection would require explicit user consent.</p>
+
+  <h2>Contact</h2>
+  <p>If you have any questions about this privacy policy or the extensions, please contact:</p>
+  <ul>
+    <li>Email: <a href="mailto:Extensions@abdqudah.com">Extensions@abdqudah.com</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/iabdqudah/" target="_blank">linkedin.com/in/iabdqudah</a></li>
+  </ul>
+
+  <footer>
+    &copy; 2025 Abdalrahman Alqudah. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
