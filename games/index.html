@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صالة الألعاب: طرنيب وطاولة | 13 لعبة عربية للتابلت</title>
+<link rel="canonical" href="https://alqudah.github.io/extensions-privacy/games/">
+<meta name="description" content="13 لعبة عربية للتابلت في تطبيق واحد: طرنيب، طاولة الزهر، ألغاز، سباق وأكثر. تعمل بدون إنترنت، بدون إعلانات، وبدون جمع أي بيانات.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0e1a2b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f1e6" media="(prefers-color-scheme: light)">
+<meta property="og:url" content="https://alqudah.github.io/extensions-privacy/games/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="صالة الألعاب">
+<meta property="og:title" content="صالة الألعاب: طرنيب وطاولة">
+<meta property="og:description" content="13 لعبة عربية للتابلت. بدون إنترنت، بدون إعلانات، بدون تسجيل دخول.">
+<meta property="og:image" content="https://alqudah.github.io/extensions-privacy/games/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="صالة الألعاب: لقطات من ألعاب التطبيق">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="صالة الألعاب: طرنيب وطاولة">
+<meta name="twitter:description" content="13 لعبة عربية للتابلت. بدون إنترنت، بدون إعلانات، بدون تسجيل دخول.">
+<meta name="twitter:image" content="https://alqudah.github.io/extensions-privacy/games/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/lalezar-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/readex-pro-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Lalezar";font-display:swap;src:url(fonts/lalezar-arabic-400-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Lalezar";font-display:swap;src:url(fonts/lalezar-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:"Readex Pro";font-weight:400;font-display:swap;src:url(fonts/readex-pro-arabic-400-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Readex Pro";font-weight:400;font-display:swap;src:url(fonts/readex-pro-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:"Readex Pro";font-weight:600;font-display:swap;src:url(fonts/readex-pro-arabic-600-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+FB50-FDFF,U+FE70-FEFF}
+@font-face{font-family:"Readex Pro";font-weight:600;font-display:swap;src:url(fonts/readex-pro-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+
+:root{
+  --bg:#0e1a2b; --bg2:#13233a; --card:#172a43; --line:#274262;
+  --ink:#f4efe4; --muted:#a9b8c8; --gold:#ffb547; --gold-ink:#1a1204; --heading:#fff6e2;
+  --shadow:0 18px 50px rgba(0,0,0,.45);
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f6f1e6; --bg2:#efe7d6; --card:#ffffff; --line:#e1d6bf;
+    --ink:#1b2636; --muted:#5a6778; --gold:#e79a1f; --gold-ink:#1a1204; --heading:#0e1a2b;
+    --shadow:0 14px 40px rgba(40,30,10,.14);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Readex Pro",system-ui,sans-serif;font-size:17px;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Lalezar","Readex Pro",sans-serif;font-weight:400;color:var(--heading);line-height:1.25}
+h2{font-size:clamp(30px,6vw,44px);margin-bottom:8px}
+.lead{color:var(--muted);max-width:60ch}
+section{padding:56px 0}
+
+/* hero */
+.hero{padding:28px 0 48px;background:radial-gradient(80% 60% at 50% 0%,color-mix(in srgb,var(--gold) 22%,transparent) 0,transparent 70%)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600}
+.brand img{width:44px;height:44px;border-radius:12px}
+.hero-grid{display:grid;gap:28px;align-items:center;margin-top:28px}
+.hero h1{font-size:clamp(44px,11vw,84px)}
+.hero h1 span{display:block;color:var(--gold);font-size:.55em;line-height:1.3}
+.pitch{font-size:clamp(18px,4.2vw,22px);margin:10px 0 22px;max-width:34ch}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--gold-ink);font-weight:600;font-size:19px;text-decoration:none;padding:14px 26px;border-radius:14px;box-shadow:0 8px 24px color-mix(in srgb,var(--gold) 35%,transparent);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--heading);outline-offset:3px}
+.btn svg{width:22px;height:22px}
+.note{color:var(--muted);font-size:14px;margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px}
+.hero-shot{border-radius:20px;overflow:hidden;border:6px solid var(--card);box-shadow:var(--shadow)}
+
+/* gallery */
+.gallery{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 16px 12px;margin:0 -16px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.gallery figure{flex:0 0 min(86%,640px);scroll-snap-align:center;border-radius:16px;overflow:hidden;border:4px solid var(--card);box-shadow:var(--shadow)}
+.hint{color:var(--muted);font-size:14px}
+
+/* games */
+.group{margin-top:34px}
+.group h3{font-size:26px;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.group h3::before{content:"";width:10px;height:26px;border-radius:4px;background:var(--gold)}
+.games{display:grid;grid-template-columns:1fr;gap:14px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.game img{aspect-ratio:16/9;object-fit:cover;width:100%;border-bottom:4px solid var(--a)}
+.game div{padding:12px 16px 16px}
+.game h4{font-family:"Lalezar",sans-serif;font-weight:400;font-size:24px;color:var(--heading);line-height:1.3}
+.game p{color:var(--muted);font-size:15.5px}
+.soon{margin-top:26px;background:var(--bg2);border:1px dashed var(--line);border-radius:16px;padding:14px 18px}
+
+/* features */
+.features{background:var(--bg2)}
+.feat{display:grid;gap:14px;margin-top:22px;list-style:none}
+.feat li{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.feat b{display:block;font-family:"Lalezar",sans-serif;font-weight:400;font-size:24px;color:var(--heading)}
+.feat span{color:var(--muted)}
+.ico{font-size:28px;display:block;margin-bottom:4px}
+
+.cta{text-align:center}
+.cta .lead{margin:0 auto 22px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{color:var(--ink)}
+
+@media (min-width:700px){
+  .games{grid-template-columns:repeat(2,1fr)}
+  .feat{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:980px){
+  .hero-grid{grid-template-columns:1fr 1.15fr}
+  .games{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+  .feat{grid-template-columns:repeat(4,1fr)}
+  .gallery figure{flex-basis:560px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="icon-192.png" width="44" height="44" alt="">صالة الألعاب</div>
+    <div class="hero-grid">
+      <div>
+        <h1>صالة الألعاب<span>طرنيب وطاولة و11 لعبة ثانية</span></h1>
+        <p class="pitch">13 لعبة عربية مصممة للتابلت في تطبيق واحد، تشتغل بدون إنترنت وبدون إعلانات.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.alqudah.arcade" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4 2.5v19a1 1 0 0 0 1.5.86l16-9.5a1 1 0 0 0 0-1.72l-16-9.5A1 1 0 0 0 4 2.5z"/></svg>
+          حمّلها من Google Play
+        </a>
+        <p class="note">لأجهزة أندرويد. مصممة للتابلت وتشتغل على الهاتف كمان.</p>
+        <ul class="chips" aria-label="مميزات">
+          <li>بدون إنترنت</li><li>بدون إعلانات</li><li>بدون تسجيل دخول</li><li>بدون جمع بيانات</li>
+        </ul>
+      </div>
+      <picture class="hero-shot">
+        <source srcset="img/shots/hub.webp" type="image/webp">
+        <img src="img/shots/hub.jpg" width="1280" height="720" alt="الشاشة الرئيسية لصالة الألعاب على التابلت">
+      </picture>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="g-title">
+    <div class="wrap">
+      <h2 id="g-title">لقطات من التطبيق</h2>
+      <p class="hint">اسحب لتشوف أكثر</p>
+      <div class="gallery" tabindex="0" aria-label="لقطات الشاشة">
+        <figure><picture><source srcset="img/shots/t2-tarneeb.webp" type="image/webp"><img src="img/shots/t2-tarneeb.jpg" width="1280" height="720" loading="lazy" alt="لعبة طرنيب"></picture></figure>
+        <figure><picture><source srcset="img/shots/t3-tawla.webp" type="image/webp"><img src="img/shots/t3-tawla.jpg" width="1280" height="720" loading="lazy" alt="طاولة الزهر"></picture></figure>
+        <figure><picture><source srcset="img/shots/t4-souq.webp" type="image/webp"><img src="img/shots/t4-souq.jpg" width="1280" height="720" loading="lazy" alt="سوق الذهب"></picture></figure>
+        <figure><picture><source srcset="img/shots/t5-huroof.webp" type="image/webp"><img src="img/shots/t5-huroof.jpg" width="1280" height="720" loading="lazy" alt="حروف"></picture></figure>
+        <figure><picture><source srcset="img/shots/t6-color-lab.webp" type="image/webp"><img src="img/shots/t6-color-lab.jpg" width="1280" height="720" loading="lazy" alt="مختبر الألوان"></picture></figure>
+        <figure><picture><source srcset="img/shots/t7-caravan.webp" type="image/webp"><img src="img/shots/t7-caravan.jpg" width="1280" height="720" loading="lazy" alt="القافلة"></picture></figure>
+        <figure><picture><source srcset="img/shots/t8-city-lines.webp" type="image/webp"><img src="img/shots/t8-city-lines.jpg" width="1280" height="720" loading="lazy" alt="خطوط المدينة"></picture></figure>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="games-title">
+    <div class="wrap">
+      <h2 id="games-title">الألعاب الـ13</h2>
+      <p class="lead">كل لعبة إلها طابعها، ومعظمها مستوحى من المنطقة: من ديوان الطرنيب لمترو أبوظبي، ومن ليوا لوادي رم.</p>
+
+      <div class="group">
+        <h3>ألعاب شعبية</h3>
+        <div class="games">
+          <article class="game" style="--a:#2f7a45"><picture><source srcset="img/games/tarneeb.webp" type="image/webp"><img src="img/games/tarneeb.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>طرنيب</h4><p>لعبة الورق الشامية الأشهر، أنت وشريكك ضد خصمين أذكياء بثلاث مستويات صعوبة.</p></div></article>
+          <article class="game" style="--a:#8c4a2a"><picture><source srcset="img/games/tawla.webp" type="image/webp"><img src="img/games/tawla.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>طاولة الزهر</h4><p>العادية والمحبوسة والدوّارة، ضد الحاسوب أو صديق بجانبك.</p></div></article>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>ألغاز وتفكير</h3>
+        <div class="games">
+          <article class="game" style="--a:#3553d1"><picture><source srcset="img/games/color-lab.webp" type="image/webp"><img src="img/games/color-lab.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>مختبر الألوان</h4><p>اسكب الألوان بين الأنابيب حتى يستقل كل لون بأنبوبه. 60 مستوى.</p></div></article>
+          <article class="game" style="--a:#c7a03a"><picture><source srcset="img/games/souq.webp" type="image/webp"><img src="img/games/souq.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>سوق الذهب</h4><p>طابق الجواهر في أزقة السوق القديم. 45 مرحلة.</p></div></article>
+          <article class="game" style="--a:#6b4fa0"><picture><source srcset="img/games/shadow.webp" type="image/webp"><img src="img/games/shadow.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>الظل</h4><p>أدر المجسم تحت الضوء حتى يرسم ظله شكلًا مألوفًا. 24 مستوى ثلاثي الأبعاد.</p></div></article>
+          <article class="game" style="--a:#2c8c8c"><picture><source srcset="img/games/huroof.webp" type="image/webp"><img src="img/games/huroof.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>حروف</h4><p>كوّن الكلمات العربية من عجلة الحروف، مع تحدي كلمة اليوم.</p></div></article>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>استراتيجية وقصة</h3>
+        <div class="games">
+          <article class="game" style="--a:#d9463b"><picture><source srcset="img/games/city-lines.webp" type="image/webp"><img src="img/games/city-lines.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>خطوط المدينة</h4><p>خطط شبكة مترو أبوظبي ودبي وعمّان قبل أن تزدحم المحطات.</p></div></article>
+          <article class="game" style="--a:#b7792b"><picture><source srcset="img/games/caravan.webp" type="image/webp"><img src="img/games/caravan.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>القافلة</h4><p>قُد قافلة تجارية من عدن إلى دمشق، ولكل قرار ثمن. 108 بطاقات و9 نهايات.</p></div></article>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>حركة وسباق</h3>
+        <div class="games">
+          <article class="game" style="--a:#d9772b"><picture><source srcset="img/games/dunes.webp" type="image/webp"><img src="img/games/dunes.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>سباق الكثبان</h4><p>تفحيط وسباق على 8 حلبات من ليوا إلى وادي رم.</p></div></article>
+          <article class="game" style="--a:#1c7fa6"><picture><source srcset="img/games/diver.webp" type="image/webp"><img src="img/games/diver.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>الغوّاص</h4><p>اغطس في أعماق الخليج واجمع اللؤلؤ قبل أن ينفد نَفَسك.</p></div></article>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>لاعبان وموسيقى وإبداع</h3>
+        <div class="games">
+          <article class="game" style="--a:#1f8a74"><picture><source srcset="img/games/duel.webp" type="image/webp"><img src="img/games/duel.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>المبارزة</h4><p>هوكي طاولة للاعبين على جهاز واحد، بشخصيات وقدرات خاصة.</p></div></article>
+          <article class="game" style="--a:#8a3b52"><picture><source srcset="img/games/rhythm.webp" type="image/webp"><img src="img/games/rhythm.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>إيقاع</h4><p>اعزف المقسوم والملفوف والسماعي على الطبلة مع المقامات العربية.</p></div></article>
+          <article class="game" style="--a:#c9953e"><picture><source srcset="img/games/sand-water.webp" type="image/webp"><img src="img/games/sand-water.jpg" width="640" height="360" loading="lazy" alt=""></picture><div><h4>رمل وماء</h4><p>عالم فيزيائي من الرمل والماء والنار والحمم، بوضع حر و12 تحديًا.</p></div></article>
+        </div>
+      </div>
+
+      <p class="soon"><b>قريبًا في التحديث الجاي:</b> كونكان والدامة.</p>
+    </div>
+  </section>
+
+  <section class="features" aria-labelledby="f-title">
+    <div class="wrap">
+      <h2 id="f-title">ليش صالة الألعاب؟</h2>
+      <ul class="feat">
+        <li><span class="ico" aria-hidden="true">📴</span><b>بدون إنترنت</b><span>كل شي داخل التطبيق، حتى الخطوط. العب بالسيارة أو بالطيارة.</span></li>
+        <li><span class="ico" aria-hidden="true">🚫</span><b>بدون إعلانات</b><span>ولا مشتريات داخلية. اللعبة كاملة من أول ما تفتحها.</span></li>
+        <li><span class="ico" aria-hidden="true">🔒</span><b>بدون جمع بيانات</b><span>ما في تسجيل دخول، وتقدّمك محفوظ على جهازك فقط.</span></li>
+        <li><span class="ico" aria-hidden="true">🔤</span><b>عربية بالكامل</b><span>واجهة عربية، ومصممة للتابلت وتشتغل على الهاتف كمان.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="c-title">
+    <div class="wrap">
+      <h2 id="c-title">جاهز تلعب؟</h2>
+      <p class="lead">نزّلها على التابلت أو الهاتف، وقلّي رأيك.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.alqudah.arcade" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4 2.5v19a1 1 0 0 0 1.5.86l16-9.5a1 1 0 0 0 0-1.72l-16-9.5A1 1 0 0 0 4 2.5z"/></svg>
+        حمّلها من Google Play
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://alqudah.github.io/extensions-privacy/game-hall/">سياسة الخصوصية</a> · <a href="mailto:Extensions@abdqudah.com">Extensions@abdqudah.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
