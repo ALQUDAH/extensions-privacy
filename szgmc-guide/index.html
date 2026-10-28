@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مرشد الجامع الكبير</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root {
+  --marble: #f7f8f6; --surface: #ffffff; --ink: #1d2733; --muted: #5d6b78; --line: #dfe4e6;
+  --pool: #1f4e6b; --pool-ink: #f2f6f8; --gold: #a57c22; --gold-soft: #f3ead6; --bubble-me: #e6eef3; --warn: #8a4b12;
+  --f-display: "Reem Kufi", "Noto Kufi Arabic", Tahoma, sans-serif;
+  --f-body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --marble: #11171d; --surface: #182129; --ink: #e8edf0; --muted: #9aa9b5; --line: #2a3640;
+    --pool: #0d2a3c; --pool-ink: #e6eff4; --gold: #d6aa4a; --gold-soft: #2c2616; --bubble-me: #1f3342; --warn: #e2a066; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--marble); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.75;
+  display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); }
+.wrap { width: 100%; max-width: 760px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { background: var(--pool); color: var(--pool-ink); flex: none; }
+header .wrap { padding-block: 16px 14px; display: flex; align-items: center; gap: 12px; }
+.mark { width: 40px; height: 40px; flex: none; }
+.head { flex: 1; min-width: 0; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: 1.4rem; margin: 0; line-height: 1.3; }
+.sub { margin: 0; font-size: .84rem; opacity: .85; }
+.lang { font: inherit; font-size: .82rem; font-weight: 600; background: transparent; color: var(--pool-ink);
+  border: 1px solid currentColor; border-radius: 999px; padding: 4px 14px; cursor: pointer; flex: none; }
+main { flex: 1; min-height: 0; overflow-y: auto; }
+main .wrap { padding-block: 20px 12px; display: flex; flex-direction: column; gap: 14px; }
+.msg { display: flex; flex-direction: column; gap: 6px; max-width: 88%; min-width: 0; }
+.msg.bot { align-self: flex-start; } .msg.me { align-self: flex-end; }
+.bubble { padding: 10px 14px; border-radius: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.bot .bubble { background: var(--surface); border: 1px solid var(--line); border-start-start-radius: 4px; }
+.me .bubble { background: var(--bubble-me); border-start-end-radius: 4px; }
+.bubble.thinking { color: var(--muted); }
+.who { font-size: .72rem; color: var(--muted); }
+.src { display: flex; flex-wrap: wrap; gap: 8px; font-size: .75rem; }
+.src a { color: var(--gold); text-decoration: none; border-bottom: 1px dotted var(--gold); }
+.note { font-size: .75rem; color: var(--warn); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: inherit; font-size: .82rem; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  background: var(--gold-soft); color: var(--ink); border: 1px solid transparent; }
+.chip:hover { border-color: var(--gold); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+footer { flex: none; border-top: 1px solid var(--line); background: var(--surface); padding-bottom: env(safe-area-inset-bottom, 0px); }
+footer .wrap { padding-block: 10px; display: flex; flex-direction: column; gap: 6px; }
+form { display: flex; gap: 8px; align-items: flex-end; }
+textarea { flex: 1; min-width: 0; resize: none; font: inherit; color: var(--ink); background: var(--marble);
+  border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; max-height: 120px; }
+.send { font: inherit; font-weight: 600; background: var(--pool); color: var(--pool-ink); border: 0; border-radius: 12px; padding: 9px 18px; cursor: pointer; }
+.send:disabled { opacity: .55; cursor: default; }
+.fine { font-size: .72rem; color: var(--muted); margin: 0; }
+html[dir="ltr"] body { font-family: "IBM Plex Sans Arabic", "Segoe UI", system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M20 6c-6 4-9 8-9 13h18c0-5-3-9-9-13z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M9 19h22v13H9z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M17 32v-6a3 3 0 0 1 6 0v6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M4 32V12M36 32V12" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="20" cy="4" r="1.6" fill="currentColor"/>
+    </svg>
+    <div class="head">
+      <h1 id="title"></h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <button class="lang" id="langBtn" type="button"></button>
+  </div>
+</header>
+
+<main id="scroller"><div class="wrap" id="log"></div></main>
+
+<footer>
+  <div class="wrap">
+    <form id="form" autocomplete="off">
+      <textarea id="q" rows="1"></textarea>
+      <button class="send" id="send" type="submit"></button>
+    </form>
+    <p class="fine" id="fine"></p>
+  </div>
+</footer>
+
+<script>
+const API_URL = "https://n8n.qclabz.com/webhook/szgmc-agent";
+
+const T = {
+  ar: {
+    dir: "rtl", title: "مرشد الجامع الكبير",
+    sub: "يجاوبك من موقع مركز جامع الشيخ زايد الكبير بس، باللهجة الإماراتية",
+    switchTo: "English", placeholder: "اكتب سؤالك... مثلاً: شو اللبس المطلوب للحريم؟", send: "أرسل",
+    me: "أنت", bot: "المرشد", thinking: "قاعد أدوّر في معلومات الموقع...", src: "من الموقع:",
+    welcome: "هلا والله وحياك الله! أنا مرشدك لجامع الشيخ زايد الكبير. اسألني عن مواعيد الزيارة، الرسوم، اللبس، الجولات، المواقف، أو عن معمار الجامع، وأجاوبك من موقع المركز الرسمي.",
+    chips: ["متى مواعيد الزيارة يوم الجمعة؟","كم رسوم الدخول؟","شو اللبس المطلوب للحريم؟","متى الجولات المجانية؟","وين أوقف سيارتي؟","كم طول المآذن؟"],
+    fine: "المصدر الوحيد: szgmc.gov.ae، ويتحدّث يومياً. تأكد من الموقع قبل زيارتك.",
+    err: "صار خلل في الاتصال بالمرشد. جرّب ترسل سؤالك مرة ثانية بعد شوي."
+  },
+  en: {
+    dir: "ltr", title: "Grand Mosque Guide",
+    sub: "Answers only from the Sheikh Zayed Grand Mosque Centre website",
+    switchTo: "عربي", placeholder: "Ask a question, e.g. What should women wear?", send: "Send",
+    me: "You", bot: "Guide", thinking: "Checking the mosque website...", src: "From the website:",
+    welcome: "Welcome! I am your guide to the Sheikh Zayed Grand Mosque. Ask me about visiting hours, fees, dress code, tours, parking or the mosque's architecture, and I will answer from the Centre's official website.",
+    chips: ["What are the Friday visiting hours?","How much is the entry fee?","What is the dress code?","When are the free tours?","Where can I park?","How tall are the minarets?"],
+    fine: "Only source: szgmc.gov.ae, refreshed daily. Please confirm on the website before you visit.",
+    err: "Could not reach the guide. Please try sending your question again in a moment."
+  }
+};
+
+const $ = id => document.getElementById(id);
+const log = $("log"), scroller = $("scroller"), q = $("q"), sendBtn = $("send");
+let lang = "ar", busy = false;
+let sessionId;
+try { sessionId = localStorage.getItem("szgmc_sid"); } catch (_) {}
+if (!sessionId) {
+  sessionId = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2));
+  try { localStorage.setItem("szgmc_sid", sessionId); } catch (_) {}
+}
+
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = t.dir;
+  document.title = t.title;
+  $("title").textContent = t.title; $("sub").textContent = t.sub;
+  $("langBtn").textContent = t.switchTo; q.placeholder = t.placeholder; q.setAttribute("aria-label", t.placeholder);
+  sendBtn.textContent = t.send; $("fine").textContent = t.fine;
+  log.innerHTML = "";
+  const { m } = addMsg("bot", t.welcome);
+  const chips = document.createElement("div"); chips.className = "chips";
+  for (const s of t.chips) {
+    const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = s;
+    b.addEventListener("click", () => ask(s)); chips.append(b);
+  }
+  m.append(chips);
+}
+function addMsg(role, text) {
+  const t = T[lang];
+  const m = document.createElement("div"); m.className = "msg " + role;
+  const who = document.createElement("span"); who.className = "who"; who.textContent = role === "me" ? t.me : t.bot;
+  const b = document.createElement("div"); b.className = "bubble"; b.textContent = text;
+  m.append(who, b); log.append(m); scroller.scrollTop = scroller.scrollHeight;
+  return { m, b };
+}
+function addSources(m, urls) {
+  if (!urls || !urls.length) return;
+  const w = document.createElement("div"); w.className = "src";
+  const l = document.createElement("span"); l.textContent = T[lang].src; w.append(l);
+  for (const u of urls) {
+    if (!/^https:\/\/(www\.)?szgmc\.gov\.ae\//i.test(u)) continue;
+    const a = document.createElement("a"); a.href = u; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = decodeURIComponent(u.replace(/^https:\/\/(www\.)?szgmc\.gov\.ae\/?/i, "").replace(/\/$/, "")) || "szgmc.gov.ae";
+    w.append(a);
+  }
+  m.append(w);
+}
+
+async function ask(text) {
+  text = String(text || "").trim();
+  if (!text || busy) return;
+  busy = true; sendBtn.disabled = true; q.value = ""; autosize();
+  addMsg("me", text);
+  const { m, b } = addMsg("bot", T[lang].thinking); b.classList.add("thinking");
+  try {
+    const res = await fetch(API_URL, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text, lang, sessionId })
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    b.classList.remove("thinking");
+    b.textContent = data.answer || T[lang].err;
+    addSources(m, data.sources);
+  } catch (e) {
+    b.classList.remove("thinking"); b.textContent = T[lang].err; b.classList.add("note");
+  } finally {
+    busy = false; sendBtn.disabled = false; scroller.scrollTop = scroller.scrollHeight; q.focus();
+  }
+}
+
+function autosize() { q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, 120) + "px"; }
+q.addEventListener("input", autosize);
+q.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(q.value); } });
+$("form").addEventListener("submit", e => { e.preventDefault(); ask(q.value); });
+$("langBtn").addEventListener("click", () => { lang = lang === "ar" ? "en" : "ar"; render(); });
+render();
+</script>
+</body>
+</html>
